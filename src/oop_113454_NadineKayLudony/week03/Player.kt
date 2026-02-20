@@ -14,6 +14,8 @@ class Player {
             xp += amount
             if(level > currLevel){
                 println("Level Up! Selamat $username naik ke level $level")
+            } else {
+                println("Add $amount xp. Level: $level")
             }
         }
 
