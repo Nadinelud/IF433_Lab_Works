@@ -1,7 +1,10 @@
 package oop_113454_NadineKayLudony.week03
 
 class Weapon {
-    private var name: String = "NPC"
+    private var name: String = "Dina"
+    public fun get_name(): String{
+        return this.name
+    }
     var damage: Int = 0
         set(value){
             if (value < 0){
