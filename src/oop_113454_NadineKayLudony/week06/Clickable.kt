@@ -1,6 +1,6 @@
 package oop_113454_NadineKayLudony.week06
 
 interface Clickable {
-    val name: String = "Tombol rahasia"
+    val name: String
     fun click()
 }
