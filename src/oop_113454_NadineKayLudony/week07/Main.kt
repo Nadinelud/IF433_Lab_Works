@@ -32,5 +32,6 @@ fun main(){
     val uiMessage = when(response){
         is ApiResponse.Success -> "Tempilkan: ${response.data}"
         is ApiResponse.Error -> "Muncul alert: ${response.message}
+        ApiResponse.Loading -> "Loading..."
     }
 }
