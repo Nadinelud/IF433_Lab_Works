@@ -38,4 +38,6 @@ fun main(){
     println("\n === GAME ===")
     GameManager.startGame()
     GameManager.startGame()
+    println("LEGENDARY CHANCE: ${ItemRarity.LEGENDARY}")
+    Weapon.forgeStarterSword()
 }
