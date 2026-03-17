@@ -34,4 +34,8 @@ fun main(){
         is ApiResponse.Error -> "Muncul alert: ${response.message}"
         ApiResponse.Loading -> "Loading..."
     }
+
+    println("\n === GAME ===")
+    GameManager.startGame()
+    GameManager.startGame()
 }
