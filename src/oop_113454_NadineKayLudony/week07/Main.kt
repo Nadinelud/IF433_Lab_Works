@@ -31,7 +31,7 @@ fun main(){
     val response: ApiResponse = ApiResponse.Success("Data berhasil ditarik!")
     val uiMessage = when(response){
         is ApiResponse.Success -> "Tempilkan: ${response.data}"
-        is ApiResponse.Error -> "Muncul alert: ${response.message}
+        is ApiResponse.Error -> "Muncul alert: ${response.message}"
         ApiResponse.Loading -> "Loading..."
     }
 }
