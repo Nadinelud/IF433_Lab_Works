@@ -1,7 +1,5 @@
 package oop_113454_NadineKayLudony.week09
 
-package oop_<nim>_<nama>.week09
-
 fun main() {
 
     val tradeHistory = listOf(
@@ -12,4 +10,6 @@ fun main() {
         TradeLog("SOLUSDT", "LONG", 10, 8.0, "OPEN"),
         TradeLog("BTCUSDT", "LONG", 5, -2.0, "OPEN")
     )
+
+    val closedTrades = tradeHistory.filter { it.status == "CLOSED" }
 }
