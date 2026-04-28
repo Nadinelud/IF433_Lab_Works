@@ -14,4 +14,7 @@ fun main (){
     txRepo.add(Transaction("02", 300000.0))
     txRepo.add(Transaction("03", -150000.0))
 
+    txRepo.getAll().forEach { tx->
+        println("ID: ${tx.id} || amount: ${tx.amount}")
+    }
 }
