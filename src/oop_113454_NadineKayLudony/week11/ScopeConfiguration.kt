@@ -1,3 +1,3 @@
 package oop_113454_NadineKayLudony.week11
 
-data class User(val name: String = "", val age: Int = 0)
+data class User(var name: String = "", var age: Int = 0)

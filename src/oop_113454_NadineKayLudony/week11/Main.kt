@@ -7,4 +7,18 @@ fun main(){
 
     val text: String? = null
     println("Apakah null? ${text.isNullorEmptyCustom()}")
+
+    println("=== TEST RUN FUNCTION ===")
+    val result = "kotlin".run{
+        println("Memproses kata: ${this}")
+        length * 2
+    }
+    println("Hasil kalkulasi run: $result")
+
+    println("=== TEST APPLY ===")
+    val user = User().apply {
+        name = "Alex"
+        age = 25
+    }
+    println(user)
 }
