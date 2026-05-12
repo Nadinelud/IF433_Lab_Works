@@ -15,3 +15,17 @@ fun dispenseKibble(
     println("Kibble berhasil dikeluarkan!")
     return availableGram-requestedGram
 }
+
+fun main(){
+    var currentKibbleStock = 50;
+
+    try{
+        dispenseKibble(80, currentKibbleStock)
+    }catch (e: FoodEmptyException){
+        println(e.message)
+    }catch (e: DispenserJamException){
+        println(e.message)
+    }catch (e: Exception){
+        println("Error: terjadi kesalahan tak terduga!")
+    }
+}
