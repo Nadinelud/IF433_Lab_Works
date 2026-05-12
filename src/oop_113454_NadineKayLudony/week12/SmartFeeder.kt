@@ -17,15 +17,17 @@ fun dispenseKibble(
 }
 
 fun main(){
-    var currentKibbleStock = 50;
+    var currentKibbleStock: Int = 50;
 
     try{
-        dispenseKibble(80, currentKibbleStock)
+        dispenseKibble(80, currentKibbleStock, false)
     }catch (e: FoodEmptyException){
         println(e.message)
     }catch (e: DispenserJamException){
         println(e.message)
     }catch (e: Exception){
         println("Error: terjadi kesalahan tak terduga!")
+    }finally {
+        println("Siklus pengecekan dispenser pagi selesai")
     }
 }
