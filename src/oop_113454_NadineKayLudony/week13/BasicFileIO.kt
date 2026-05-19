@@ -7,4 +7,6 @@ fun main(){
     val file = File("notes.txt")
     file.writeText("Line 1: Inisialisasi Sistem \n")
     println("File berhasil ditulis")
+    file.appendText("Line 2: Menambahkan konfigurasi baru.\n")
+    println("berhasil di-append")
 }
